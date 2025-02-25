@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import axios from 'axios';
 import { BehaviorSubject } from 'rxjs';
-import parseJSON, { findThreeJSJSON} from '../utils/parse-json.ts'; // Предполагаемые утилиты
+import parseJSON, { findThreeJSJSON} from '../utils/parse-json.ts';
 
 export type ViewerStatus = "idle" | "loading" | "error";
 
@@ -52,7 +52,7 @@ export default class Model {
 
         object.traverse((child) => {
             if (child instanceof THREE.Mesh) {
-                // Например, можно использовать child.id для циклического присвоения статуса
+
                 const statusIndex: number = (child.id % 4) + 1;
                 child.userData.propertyValue = {
                     statusCode: statusIndex,
