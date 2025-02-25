@@ -16,6 +16,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rxjs": "^7.8.1",
+    "styled-components": "^6.1.15",
     "three": "^0.173.0",
     "uuid": "^11.0.5"
   },

@@ -1,10 +1,13 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import * as RX from "rxjs";
-import Viewer from "../viewer/viewer";
+import Viewer from "../entities/viewer";
 
 export const ViewerContext = createContext<Viewer | null>(null);
 
+
 export function useViewer() {
+
+
   const viewer = useContext(ViewerContext);
 
   if (viewer === null) {

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Viewer from "../viewer/viewer";
+import Viewer from "../entities/viewer";
 import { ViewerContext } from "../hooks";
 
 const ViewerComponent: React.FC<{ children: React.ReactNode }> = ({

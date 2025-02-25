@@ -2,7 +2,7 @@ import { useBehaviorSubject, useViewer } from "../hooks";
 
 const Loading: React.FC = () => {
   const viewer = useViewer();
-  const status = useBehaviorSubject(viewer.status);
+  const status = useBehaviorSubject(viewer.model.status);
 
   return (
     <div style={{ position: "absolute", top: "50vh", right: "50vw" }}>
